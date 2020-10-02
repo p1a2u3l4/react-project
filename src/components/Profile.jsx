@@ -15,7 +15,7 @@ const Profile = () => {
             post1
           </div>
           <div>
-            post229
+            post227
           </div>
         </div>
     </div>

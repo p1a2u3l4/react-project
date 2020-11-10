@@ -1,5 +1,6 @@
 import React from 'react'
 import Myposts from '../Posts/MyPosts'
+import './Main.css'
 
 const Main = () => {
     return(

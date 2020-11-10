@@ -1,7 +1,11 @@
 .App {
-  width: 1500px;
+  /* width: 1500px;
   text-align: center;
-  margin: 0 auto;
+  margin: 0 auto; */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .App-logo {
@@ -15,61 +19,6 @@
   }
 }
 
-
-
-.App-link {
-  color: #61dafb;
-}
-
-.app-wrapper {
-  display: grid;
-  grid-template-areas:
-  "header header"
-  "nav  main";
-}
-
-.header {
-  grid-area: header;
-  grid-template-rows: 60px 1fr;
-  grid-template-columns: 2fr 10fr;
-  grid-gap: 10px;
-  background-color: aqua;
-}
-
-.nav {
-  grid-area: nav;
-  background-color: yellow;
-}
-
-.header img {
-  width: 4vw;
-  height: auto;
-}
-
-.main {
-  grid-area: main;
-  background-color: palevioletred;
-}
-
-.main img {
-  width: 40vw;
-  height: 30vh;
-}
-
-.profilename {
-  display: flex;
-  flex-direction: row;
-}
-
-.name_surname {
-  margin-top: 5vh;
-}
-
-.avatar img {
-  width : 15vw;
-  margin-right: 3vw;
-  margin-left: 15vw;
-}
 
 
 @keyframes App-logo-spin {

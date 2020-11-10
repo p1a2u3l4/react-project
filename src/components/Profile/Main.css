@@ -1,0 +1,30 @@
+.profilename {
+    display: flex;
+    width: 70vw;
+    margin-top: 10vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+}
+
+.avatar {
+    /* width: 20vw; */
+    margin-right: 0vw;
+}
+
+.avatar img {
+    width: 10vw;
+    height: auto;
+}
+
+.name_surname {
+    width: 10vw;
+    text-align: center;
+}
+
+
+.posts {
+    margin-top: 10vh;
+}

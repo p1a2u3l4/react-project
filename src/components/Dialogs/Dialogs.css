@@ -1,13 +1,25 @@
 .dialogs {
     display: flex;
-    width: 70vw;
+    width: 75vw;
     height: auto;
-    align-items: flex-end;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
     background-color: greenyellow;
+    flex-direction: row;
 }
 
 .dialog-sign {
     color: red;
     font-size: 1em;
+}
+
+.dialog_names {
+    justify-self: flex-start;
+    margin-left: 2vw;
+    margin-top: 2vh;
+}
+
+.messages {
+    margin-left: 20vw;
+    margin-top: 2vh;
 }

@@ -6,11 +6,9 @@
     justify-content: center;
     flex-direction: row;
     flex-wrap: nowrap;
-
 }
 
 .avatar {
-    /* width: 20vw; */
     margin-right: 0vw;
 }
 

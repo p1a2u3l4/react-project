@@ -13,6 +13,10 @@
     margin-top: 2vh;
 }
 
+.nav a.active {
+    color: cornflowerblue;
+}
+
 .nav a {
     color: white;
     margin-right: 2vw;

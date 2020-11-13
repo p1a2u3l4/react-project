@@ -3,7 +3,8 @@ import React from 'react'
 const Post = (props) => {
     return(
         <div className={props}>
-            <p>{props.value}</p>
+            <h2>{props.text}</h2>
+            <p>{"Likes" + " " + props.likescount}</p>
         </div>
     )
 }

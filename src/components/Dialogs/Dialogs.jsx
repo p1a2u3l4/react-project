@@ -7,20 +7,8 @@ import Message from './Message/Message'
 
 const Dialogs = (props) => {
 
-    let DialogData = [
-        {id: 1, name: "Paul"}, 
-        {id: 2, name: "Ivan"}, 
-        {id: 3, name: "Artyom"},
-        {id: 4, name: "Dmitry"}]
-    
-    
-    let MessagesData = [
-        {id: 1, text: "Hello"}, 
-        {id: 2, text: "How are you?"}]
-
-    let DialogElements = DialogData.map( (dialog) => <Dialog name={dialog.name} id={dialog.id}/>)
-    let MessagesElements = MessagesData.map( (singlemess) =>  <Message text={singlemess.text} id={singlemess.id}/>)
-   
+    let DialogElements = props.first.map( (dialog) => <Dialog name={dialog.name} id={dialog.id}/>)
+    let MessagesElements = props.second.map( (singlemess) =>  <Message text={singlemess.text} id={singlemess.id}/>)
 
     return (
         <BrowserRouter>

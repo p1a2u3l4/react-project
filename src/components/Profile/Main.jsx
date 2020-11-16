@@ -2,7 +2,10 @@ import React from 'react'
 import Myposts from '../Posts/MyPosts'
 import './Main.css'
 
-const Main = () => {
+
+
+
+const Main = (props) => {
     return(
       <div className="main">
         
@@ -12,9 +15,12 @@ const Main = () => {
         </div>
 
         <div className="posts">
-            <div className="new_post"></div>
+            <div className="new_post">
+              <textarea></textarea>
+              <button className="addpost_button">Add post</button>
+            </div>
             <div className="old_posts">
-              <Myposts />
+              <Myposts PostData={props.PostData}/>
             </div>
         </div>
       </div>

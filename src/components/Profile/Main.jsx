@@ -6,6 +6,13 @@ import './Main.css'
 
 
 const Main = (props) => {
+
+  let NewElement = React.createRef()
+  let NewPost = () => {
+    
+    let text = NewElement.current.value
+    alert(text)
+  }
     return(
       <div className="main">
         
@@ -16,11 +23,11 @@ const Main = (props) => {
 
         <div className="posts">
             <div className="new_post">
-              <textarea></textarea>
-              <button className="addpost_button">Add post</button>
+              <textarea ref={NewElement}></textarea>
+              <button onClick={NewPost} className="addpost_button">Add post</button>
             </div>
             <div className="old_posts">
-              <Myposts PostData={props.PostData}/>
+              <Myposts PostData={props.state.PostData}/>
             </div>
         </div>
       </div>
